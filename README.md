@@ -18,4 +18,12 @@ The `visualization/` directory contains Jupyter notebooks for plotting and inspe
 | `FSC_plots.ipynb` | Plots Fourier shell correlation (FSC) curves and visualizes the FSC = 0.143 threshold for resolution assessment. |
 | `genome_drawer.ipynb` | Plots genome map of selected region and highlighting user-defined genes with custom labels and colors. |
 
+### Cryo-EM Processing
+
+The `cryo-em_processing/` directory contains useful Jupyter notebooks and Python3 scripts to speed routine tasks while quering CryoSPARC.
+
+| Notebook | Description |
+|---|---|
+| `sets_crop_merger.py` | A lightweight calculator for merging two datasets during Extract from Micrographs step. It simply outputs two `Extraction box size` and one `Fourier-crop to box size (pix)`. It posts list of the results in the terminal. So you can choose appropriate values. |
+
 Additional scripts and notebooks will be added as the repository develops.
