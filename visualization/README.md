@@ -6,7 +6,7 @@ This repository contains lightweight tools developed to support structural biolo
 
 ## Contents
 
-### 1. `table1_chart.ipynb` — Structural Validation Metrics
+### 1. `table1_chart.ipynb` - Structural Validation Metrics
 
 A notebook for visualizing structural validation metrics using bar charts and color-coded quality thresholds.
 
@@ -18,7 +18,7 @@ A notebook for visualizing structural validation metrics using bar charts and co
 
 **Use case:** Comparing structural validation metrics and presenting the results in a clear, consistent format.
 
-### 2. `FSC_plots.ipynb` — Fourier Shell Correlation (FSC) Plots
+### 2. `FSC_plots.ipynb` - Fourier Shell Correlation (FSC) Plots
 
 A notebook for plotting Fourier shell correlation (FSC) curves from data exported from CryoSPARC.
 
@@ -29,6 +29,16 @@ A notebook for plotting Fourier shell correlation (FSC) curves from data exporte
 - Exports plots as PNG images.
 
 **Use case:** Visual inspection and presentation of FSC curves during cryo-EM reconstruction analysis.
+
+### 3. `genome_drawer.ipynb` - Draw genome map with highlighted genes and custom names
+
+A notebook for plotting genome map of selected region and highlighting user-defined genes with custom labels and colors.
+
+**Features**
+- Utilizes [DnaFeaturesViewer](https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer) package.
+- Supports the visualization of phage structural genes for structural biology research.
+- Allows users to customize gene selection, labels, and plot appearance.
+- Exports plots as SVG images.
 
 ## Requirements
 

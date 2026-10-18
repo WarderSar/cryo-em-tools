@@ -16,5 +16,6 @@ The `visualization/` directory contains Jupyter notebooks for plotting and inspe
 |---|---|
 | `table1_chart.ipynb` | Visualizes structural validation metrics using bar charts and configurable quality thresholds. |
 | `FSC_plots.ipynb` | Plots Fourier shell correlation (FSC) curves and visualizes the FSC = 0.143 threshold for resolution assessment. |
+| `genome_drawer.ipynb` | Plots genome map of selected region and highlighting user-defined genes with custom labels and colors. |
 
 Additional scripts and notebooks will be added as the repository develops.
