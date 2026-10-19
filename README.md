@@ -20,10 +20,11 @@ The `visualization/` directory contains Jupyter notebooks for plotting and inspe
 
 ### Cryo-EM Processing
 
-The `cryo-em_processing/` directory contains useful Jupyter notebooks and Python3 scripts to speed routine tasks while quering CryoSPARC.
+The `cryoem_processing/` directory contains useful Jupyter notebooks and Python3 scripts to speed routine tasks while quering CryoSPARC.
 
 | Notebook | Description |
 |---|---|
-| `sets_crop_merger.py` | A lightweight calculator for merging two datasets during Extract from Micrographs step. It simply outputs two `Extraction box size` and one `Fourier-crop to box size (pix)`. It posts list of the results in the terminal. So you can choose appropriate values. |
+| `sets_crop_merger.py` | A lightweight calculator for merging two datasets during Extract from Micrographs step. It simply outputs two `Extraction box size` and one `Fourier-crop to box size (pix)`. It posts list of the results in the terminal. So you can choose appropriate values. It is also available in `cstools_set.py`. |
+| `cstools_set.py` | A module of useful functions based on (cryosparc-tools)[https://tools.cryosparc.com/]. Requires cryosparc-tools python package. functions can be combined in flexible pipelines to achieve various reconstruction goals.|
 
 Additional scripts and notebooks will be added as the repository develops.
