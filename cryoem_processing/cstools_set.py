@@ -9,25 +9,6 @@ This is a module of code I gathered for 3 years in Cryo-EM as notebooks.
 The code was refined and processed as functions.
 """
 
-def connect_cryosparc(url=None, project_uid=None):
-    """
-    Connect to CryoSPARC and return the client and selected project.
-
-    If arguments are omitted, CRYOSPARC_URL and CRYOSPARC_PROJECT_UID are used.
-    CRYOSPARC_PROJECT_UID defaults to "P1".
-    """
-    from cryosparc.tools import CryoSPARC
-
-    url = url or os.environ.get("CRYOSPARC_URL")
-    if not url:
-        raise ValueError("Provide url or set the CRYOSPARC_URL environment variable.")
-
-    project_uid = project_uid or os.environ.get("CRYOSPARC_PROJECT_UID", "P1")
-    cs = CryoSPARC(url)
-    project = cs.find_project(project_uid)
-    return cs, project
-
-
 def sets_crop_calc(box1_range, box2_range, crop_range, ps1, ps2, round_to=4):
     """
     Calculate matching pixel sizes after Fourier cropping two datasets.
